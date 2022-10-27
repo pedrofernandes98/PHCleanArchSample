@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHCleanArchSample.Domain", "PHCleanArchSample.Domain\PHCleanArchSample.Domain.csproj", "{245F8CED-4F3B-4C0E-95F4-639021B0DA01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHCleanArchSample.Domain", "PHCleanArchSample.Domain\PHCleanArchSample.Domain.csproj", "{245F8CED-4F3B-4C0E-95F4-639021B0DA01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHCleanArchSample.Infra.Data", "PHCleanArchSample.Infra.Data\PHCleanArchSample.Infra.Data.csproj", "{D6F3588A-1EB1-4705-B096-1EA59E33E54C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHCleanArchSample.Infra.Data", "PHCleanArchSample.Infra.Data\PHCleanArchSample.Infra.Data.csproj", "{D6F3588A-1EB1-4705-B096-1EA59E33E54C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHCleanArchSample.Infra.IoC", "PHCleanArchSample.Infra.IoC\PHCleanArchSample.Infra.IoC.csproj", "{806FEFE4-C759-4227-97AF-3AED1E12F0F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHCleanArchSample.Infra.IoC", "PHCleanArchSample.Infra.IoC\PHCleanArchSample.Infra.IoC.csproj", "{806FEFE4-C759-4227-97AF-3AED1E12F0F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHCleanArchSample.Application", "PHCleanArchSample.Application\PHCleanArchSample.Application.csproj", "{ECBD051B-480C-43D9-8885-4E7883452B03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHCleanArchSample.Application", "PHCleanArchSample.Application\PHCleanArchSample.Application.csproj", "{ECBD051B-480C-43D9-8885-4E7883452B03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHCleanArchSample.MVC", "PHCleanArchSample.MVC\PHCleanArchSample.MVC.csproj", "{048A6B1E-EFFC-4DB7-B2E5-0D1B075AA9F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHCleanArchSample.MVC", "PHCleanArchSample.MVC\PHCleanArchSample.MVC.csproj", "{048A6B1E-EFFC-4DB7-B2E5-0D1B075AA9F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHCleanArchSample.Domain.Tests", "PHCleanArchSample.Domain.Tests\PHCleanArchSample.Domain.Tests.csproj", "{A05598B3-3C2B-4C53-BB7C-1C1EA8CBEF2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{048A6B1E-EFFC-4DB7-B2E5-0D1B075AA9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{048A6B1E-EFFC-4DB7-B2E5-0D1B075AA9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{048A6B1E-EFFC-4DB7-B2E5-0D1B075AA9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A05598B3-3C2B-4C53-BB7C-1C1EA8CBEF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A05598B3-3C2B-4C53-BB7C-1C1EA8CBEF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A05598B3-3C2B-4C53-BB7C-1C1EA8CBEF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A05598B3-3C2B-4C53-BB7C-1C1EA8CBEF2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
