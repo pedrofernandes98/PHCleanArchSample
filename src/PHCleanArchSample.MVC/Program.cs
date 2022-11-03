@@ -1,6 +1,10 @@
+using PHCleanArchSample.Infra.IoC;
+
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
+builder.Services.AddInfra(builder.Configuration);
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

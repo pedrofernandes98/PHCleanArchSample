@@ -19,10 +19,20 @@ namespace PHCleanArchSample.Infra.Data.Repositories
             return await _context.Products.Where(x => x.Id == id).FirstOrDefaultAsync();
         }
 
-        public async Task<Product> GetProductsByCategoryId(int categoryId)
+        public async Task<Product> GetProductsAndCategory(int id)
         {
             return await _context.Products.Include(c => c.Category)
-                .SingleOrDefaultAsync(e => e.Id == categoryId);
+                .SingleOrDefaultAsync(e => e.Id == id);
         }
+
+        public async Task<IEnumerable<Product>> GetProductsByCategoryId(int categoryId)
+        {
+            return await _context.Products
+                            .AsNoTracking()
+                            .Where(p => p.CategoryId == categoryId)
+                            .ToListAsync();
+        }
+
+
     }
 }

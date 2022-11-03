@@ -4,6 +4,6 @@ namespace PHCleanArchSample.Domain.Interfaces
 {
     public interface IProductRepository : IBaseRepository<Product>
     {
-        public Task<Product> GetProductsByCategoryId(int categoryId);
+        public Task<Product> GetProductsAndCategory(int id);
     }
 }
