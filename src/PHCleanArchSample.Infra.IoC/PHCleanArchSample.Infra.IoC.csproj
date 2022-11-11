@@ -12,4 +12,8 @@
     <ProjectReference Include="..\PHCleanArchSample.Infra.Data\PHCleanArchSample.Infra.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+  </ItemGroup>
+
 </Project>

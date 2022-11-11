@@ -15,7 +15,7 @@ namespace PHCleanArchSample.Application.Services
         public ProductService(IProductRepository repository, IMapper mapper)
         {
             _repository = repository;
-            _mapper = _mapper;
+            _mapper = mapper;
         }
 
         public async Task<ProductDto> Add(ProductDto productDto)

@@ -15,7 +15,7 @@ namespace PHCleanArchSample.Application.Services
         public CategoryService(ICategoryRepository repository, IMapper mapper)
         {
             _repository = repository;
-            _mapper = _mapper;
+            _mapper = mapper;
         }
 
         public async Task<CategoryDto> Add(CategoryDto categoryDto)
