@@ -22,6 +22,9 @@ namespace PHCleanArchSample.Infra.Data.EntitiesConfiguration
                 .HasPrecision(10,2)
                 .IsRequired();
 
+            builder.Property(p => p.Image)
+                .HasMaxLength(250);
+
             builder.HasOne(c => c.Category).WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryId);
         }
