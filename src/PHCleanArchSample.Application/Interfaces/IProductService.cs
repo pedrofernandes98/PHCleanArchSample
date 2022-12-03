@@ -13,7 +13,5 @@ namespace PHCleanArchSample.Application.Interfaces
         Task<ProductDto> Add(ProductDto productDto);
 
         Task<bool> Remove(int? id);
-
-        public Task<ProductDto> GetProductsAndCategory(int id);
     }
 }

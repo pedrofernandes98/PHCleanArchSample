@@ -16,7 +16,8 @@ namespace PHCleanArchSample.Infra.Data.Repositories
 
         public override async Task<Product> GetByIdAsync(int id)
         {
-            return await _context.Products.Where(x => x.Id == id).FirstOrDefaultAsync();
+            return await _context.Products.Include(c => c.Category)
+                .SingleOrDefaultAsync(e => e.Id == id);
         }
 
         public async Task<Product> GetProductsAndCategory(int id)

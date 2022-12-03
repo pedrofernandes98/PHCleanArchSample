@@ -1,0 +1,20 @@
+﻿using MediatR;
+using PHCleanArchSample.Domain.Entities;
+
+namespace PHCleanArchSample.Application.Commands
+{
+    public abstract class ProductCommand : IRequest<Product>
+    {
+        public string Name { get; private set; }
+
+        public string Description { get; set; }
+
+        public decimal Price { get; set; }
+
+        public int Stock { get; set; }
+
+        public string Image { get; set; }
+
+        public int CategoryId { get; set; }
+    }
+}
